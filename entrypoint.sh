@@ -3,6 +3,7 @@
 echo "Hello $1"
 time=$(date)
 echo "Building frontend has begun"
+ls
 npm ci
 npm run build --if-present
 echo "Building frontend has finished"
