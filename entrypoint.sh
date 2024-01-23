@@ -3,9 +3,10 @@
 echo "Hello $1"
 time=$(date)
 echo "Building frontend has begun"
+apk add --update npm
 npm ci
 npm run build --if-present
-"Building frontend has finished"
+echo "Building frontend has finished"
 
 echo "time=$time" >> $GITHUB_OUTPUT
 
