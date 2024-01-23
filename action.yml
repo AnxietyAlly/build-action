@@ -7,7 +7,9 @@ inputs:
     required: true
     default: 'Hello World'
 outputs:
-  time: # id of output
+  beginTime: # id of output
+    description: 'The time we started building'
+  endTime: # id of output
     description: 'The time we finished building'
 runs:
   using: 'docker'
