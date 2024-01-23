@@ -6,8 +6,8 @@ beginTime=$(date)
 
 echo "Building frontend has begun"
 apk add --update npm
-# npm ci
-npm install
+npm ci
+# npm install
 npm run build --if-present
 echo "Building frontend has finished"
 
